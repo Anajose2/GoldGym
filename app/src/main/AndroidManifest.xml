@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.goldgym">
+    <!-- permiso para la localizacion -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconogoldgym"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconogoldgym"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GoldGym">
+        <activity android:name=".MainChat"></activity>
+        <activity android:name=".MensajeAdapter" />
+        <activity android:name=".main_web" />
+        <activity
+            android:name=".Chat"
+            android:parentActivityName=".Inicio" />
+        <activity
+            android:name=".Mapa"
+            android:parentActivityName=".Inicio" />
+        <activity
+            android:name=".Actividades"
+            android:parentActivityName=".Inicio" />
+        <activity
+            android:name=".Inicio"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Seguimiento"
+            android:parentActivityName=".Inicio" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MainRegistro"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

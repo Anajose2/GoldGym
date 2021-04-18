@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "783179929639",
+    "project_id": "goldgym-6046f",
+    "storage_bucket": "goldgym-6046f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783179929639:android:825bb05c4a123008851602",
+        "android_client_info": {
+          "package_name": "com.example.goldgym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783179929639-tv1ltbjhkp0u5g56hraah99i5g0rt8vi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUTSIl24n7KeHo5zkc7Xp-9BIzEn8FyUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783179929639-tv1ltbjhkp0u5g56hraah99i5g0rt8vi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

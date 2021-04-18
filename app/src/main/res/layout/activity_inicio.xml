@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/logograndegoldgym"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Entérate de todo en nuestras Redes Sociales"
+            android:textColor="#35A89D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="347dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="15dp"
+            android:text="En tu gimnasio VivaGym encontrarás el mejor equipamiento, más de 100 actividades dirigidas a la semana, entre ellas podrás entrenar con las actividades de moda como Body Pump, Body Combat..., los mejores profesionales y mucho más. Acércate a cualquiera de nuestros gimnasios y conócenos sin compromiso"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <EditText
+            android:id="@+id/edpruebacorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnfacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintEnd_toStartOf="@+id/btninstagram"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:srcCompat="@drawable/btnfacebook" />
+
+        <ImageButton
+            android:id="@+id/btninstagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintEnd_toStartOf="@+id/btntwitter"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnfacebook"
+            app:layout_constraintTop_toTopOf="@+id/btnfacebook"
+            app:srcCompat="@drawable/btninstagram" />
+
+        <ImageButton
+            android:id="@+id/btntwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintEnd_toStartOf="@+id/btnyoutube"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btninstagram"
+            app:layout_constraintTop_toTopOf="@+id/btnfacebook"
+            app:srcCompat="@drawable/btntwitter" />
+
+        <ImageButton
+            android:id="@+id/btnyoutube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintEnd_toStartOf="@+id/btnrss"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btntwitter"
+            app:layout_constraintTop_toTopOf="@+id/btnfacebook"
+            app:srcCompat="@drawable/btnyoutube" />
+
+        <ImageButton
+            android:id="@+id/btnrss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnyoutube"
+            app:layout_constraintTop_toTopOf="@+id/btnfacebook"
+            app:srcCompat="@drawable/btnrss" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividades"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAct0"
+        app:layout_constraintEnd_toEndOf="@+id/btnAct0"
+        app:layout_constraintStart_toStartOf="@+id/btnAct0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguimiento"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeg0"
+        app:layout_constraintEnd_toEndOf="@+id/btnSeg0"
+        app:layout_constraintStart_toStartOf="@+id/btnSeg0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localízanos"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMap0"
+        app:layout_constraintEnd_toEndOf="@+id/btnMap0"
+        app:layout_constraintStart_toStartOf="@+id/btnMap0" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym Chat"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChat0"
+        app:layout_constraintEnd_toEndOf="@+id/btnChat0"
+        app:layout_constraintStart_toStartOf="@+id/btnChat0" />
+
+    <ImageButton
+        android:id="@+id/btnSeg0"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAct0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ivseguiminento" />
+
+    <ImageButton
+        android:id="@+id/btnAct0"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSeg0"
+        app:layout_constraintEnd_toStartOf="@+id/btnMap0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSeg0"
+        app:srcCompat="@drawable/ivactividades" />
+
+    <ImageButton
+        android:id="@+id/btnMap0"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAct0"
+        app:layout_constraintEnd_toStartOf="@+id/btnChat0"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAct0"
+        app:srcCompat="@drawable/ivmapa" />
+
+    <ImageButton
+        android:id="@+id/btnChat0"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMap0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMap0"
+        app:srcCompat="@drawable/ivchat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

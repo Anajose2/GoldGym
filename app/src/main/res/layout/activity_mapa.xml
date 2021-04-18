@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mapa">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="410dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivity" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividades"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAct3"
+        app:layout_constraintEnd_toEndOf="@+id/btnAct3"
+        app:layout_constraintStart_toStartOf="@+id/btnAct3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguimiento"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeg3"
+        app:layout_constraintEnd_toEndOf="@+id/btnSeg3"
+        app:layout_constraintStart_toStartOf="@+id/btnSeg3" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localízanos"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMap3"
+        app:layout_constraintEnd_toEndOf="@+id/btnMap3"
+        app:layout_constraintStart_toStartOf="@+id/btnMap3" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym Chat"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChat3"
+        app:layout_constraintEnd_toEndOf="@+id/btnChat3"
+        app:layout_constraintStart_toStartOf="@+id/btnChat3" />
+
+    <ImageButton
+        android:id="@+id/btnSeg3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAct3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ivseguiminento" />
+
+    <ImageButton
+        android:id="@+id/btnAct3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSeg3"
+        app:layout_constraintEnd_toStartOf="@+id/btnMap3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSeg3"
+        app:srcCompat="@drawable/ivactividades" />
+
+    <ImageButton
+        android:id="@+id/btnMap3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAct3"
+        app:layout_constraintEnd_toStartOf="@+id/btnChat3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAct3"
+        app:srcCompat="@drawable/ivmapa2" />
+
+    <ImageButton
+        android:id="@+id/btnChat3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMap3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMap3"
+        app:srcCompat="@drawable/ivchat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

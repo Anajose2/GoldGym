@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actividades">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividades"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAct2"
+        app:layout_constraintEnd_toEndOf="@+id/btnAct2"
+        app:layout_constraintStart_toStartOf="@+id/btnAct2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguimiento"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeg2"
+        app:layout_constraintEnd_toEndOf="@+id/btnSeg2"
+        app:layout_constraintStart_toStartOf="@+id/btnSeg2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localízanos"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMap2"
+        app:layout_constraintEnd_toEndOf="@+id/btnMap2"
+        app:layout_constraintStart_toStartOf="@+id/btnMap2" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym Chat"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChat2"
+        app:layout_constraintEnd_toEndOf="@+id/btnChat2"
+        app:layout_constraintStart_toStartOf="@+id/btnChat2" />
+
+    <ImageButton
+        android:id="@+id/btnSeg2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAct2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ivseguiminento" />
+
+    <ImageButton
+        android:id="@+id/btnAct2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSeg2"
+        app:layout_constraintEnd_toStartOf="@+id/btnMap2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSeg2"
+        app:srcCompat="@drawable/ivactividades2" />
+
+    <ImageButton
+        android:id="@+id/btnMap2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAct2"
+        app:layout_constraintEnd_toStartOf="@+id/btnChat2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAct2"
+        app:srcCompat="@drawable/ivmapa" />
+
+    <ImageButton
+        android:id="@+id/btnChat2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMap2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMap2"
+        app:srcCompat="@drawable/ivchat" />
+
+    <fragment
+        android:id="@+id/menuFragment1"
+        android:name="com.example.goldgym.Fragment_MenuAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment__menu_act" />
+
+    <LinearLayout
+        android:id="@+id/layoutContenedor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuFragment1"></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

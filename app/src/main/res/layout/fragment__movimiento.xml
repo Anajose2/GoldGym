@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Movimiento">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="35dp"
+                    android:paddingBottom="35dp">
+
+                    <ImageView
+                        android:id="@+id/ejmovilidad1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ejmovilidad1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="25dp">
+
+                        <TextView
+                            android:id="@+id/txt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="V-Pass"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Ejercicio para fortalecer la espalda, glúteos y piernas.Eleva las piernas del piso hasta que formen una línea recta con el resto del cuerpo. Luego, aprieta las piernas antes de colocarlas nuevamente sobre el piso. " />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="35dp"
+                    android:paddingBottom="35dp">
+
+                    <ImageView
+                        android:id="@+id/ejmovilidad2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ejmovilidad2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="25dp">
+
+                        <TextView
+                            android:id="@+id/txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Puente o Plancha"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="8dp"
+                            android:text="ejercicio isométrico de torso que consiste en mantener una posición difícil por un periodo de tiempo prolongado.La plancha fortalece los abdominales, la espalda y los hombros." />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="35dp"
+                    android:paddingBottom="35dp">
+
+                    <ImageView
+                        android:id="@+id/ejmovilidad3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ejmovilidad3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="25dp">
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Espalda"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Prevención y tratamiento de dolores de espalda, mejorando la estabilización lumbopélvica. La realización de ejercicios con la pelota ayudará a activar este tipo de musculatura. No es necesario tener algún tipo de patología, el uso de ejercicios con fitball de este tipo hará que mejoremos nuestra postura, aumentando la fuerza de los músculos, y mejorando la estabilización en general." />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="35dp"
+                    android:paddingBottom="35dp">
+
+                    <ImageView
+                        android:id="@+id/ejmovilidad4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ejmovilidad4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="25dp">
+
+                        <TextView
+                            android:id="@+id/txt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Crunch oblicuo"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="El crunch oblicuo tumbado es un buen ejercicio para estimular el desarrollo de la musculatura abdominal. Al igual que el crunch oblicuo a la rodilla, el crunch oblicuo tumbado cumple un rol similar, aunque tiene ciertas peculiaridades que le dan una identidad especial como ejercicio." />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="35dp"
+                    android:paddingBottom="35dp">
+
+                    <ImageView
+                        android:id="@+id/ejmovilidad5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ejmovilidad5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="25dp">
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Glúteos y brazos con pelota"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="La pelota de entrenamiento te permite mejorar tu postura. Asimismo, te ayuda a mantener la curvatura natural de la espalda, lo cual es saludable y necesario. Incluir el balón suizo en tu rutina te permitirá balancear los grupos musculares del cuerpo, los cuales deben crecer en proporciones iguales para dar balance." />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="35dp"
+                    android:paddingBottom="35dp">
+
+                    <ImageView
+                        android:id="@+id/ejmovilidad6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/ejmovilidad6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="25dp">
+
+                        <TextView
+                            android:id="@+id/txt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Elevación de piernas 90º"
+                            android:textColor="@color/teal_700"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Las elevaciones de piernas en el suelo son un gran ejercicio para trabajar los abdominales inferiores, que no necesitan de ningún tipo de material para realizarlas. Los abdominales inferiores, son una de las zonas más infrautilizadas de nuestro cuerpo, por lo que es importante mantenerlos tonificados y bien trabajados." />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

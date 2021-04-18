@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_seguimiento"
+    tools:context=".Seguimiento">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actividades"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAct1"
+        app:layout_constraintEnd_toEndOf="@+id/btnAct1"
+        app:layout_constraintStart_toStartOf="@+id/btnAct1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguimiento"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeg1"
+        app:layout_constraintEnd_toEndOf="@+id/btnSeg1"
+        app:layout_constraintStart_toStartOf="@+id/btnSeg1" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localízanos"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMap1"
+        app:layout_constraintEnd_toEndOf="@+id/btnMap1"
+        app:layout_constraintStart_toStartOf="@+id/btnMap1" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym Chat"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnChat1"
+        app:layout_constraintEnd_toEndOf="@+id/btnChat1"
+        app:layout_constraintStart_toStartOf="@+id/btnChat1" />
+
+    <ImageButton
+        android:id="@+id/btnSeg1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="39dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAct1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ivseguiminento2" />
+
+    <ImageButton
+        android:id="@+id/btnAct1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="39dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSeg1"
+        app:layout_constraintStart_toEndOf="@+id/btnSeg1"
+        app:srcCompat="@drawable/ivactividades" />
+
+    <ImageButton
+        android:id="@+id/btnMap1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="38dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAct1"
+        app:layout_constraintStart_toEndOf="@+id/btnAct1"
+        app:srcCompat="@drawable/ivmapa" />
+
+    <ImageButton
+        android:id="@+id/btnChat1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMap1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMap1"
+        app:srcCompat="@drawable/ivchat" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="115dp"
+        android:text="Datos Usuario"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Nombre"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <EditText
+        android:id="@+id/edNombSeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/edFechaSeg"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Fecha Nacimiento"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/edFechaSeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fecha Nacimiento"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/edAlturaSeg"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Altura"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/edAlturaSeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="cm"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="@+id/edPesoSeg"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="98dp"
+        android:text="Peso"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/edPesoSeg"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/edPesoSeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:ems="10"
+        android:hint="Kg"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/ivPerfil"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/btnActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPesoSeg"
+        app:srcCompat="@drawable/btnactualizar" />
+
+    <Button
+        android:id="@+id/btnFoto"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/teal_700"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Foto"
+        android:textSize="10sp"
+        app:iconPadding="0dp"
+        app:iconTint="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="@+id/ivPerfil"
+        app:layout_constraintStart_toStartOf="@+id/ivPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/ivPerfil"
+        app:rippleColor="@color/teal_700"
+        app:strokeColor="@color/teal_700" />
+</androidx.constraintlayout.widget.ConstraintLayout>
